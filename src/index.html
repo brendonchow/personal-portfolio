@@ -3,7 +3,64 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Personal Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body></body>
+  <body>
+    <header class="about">
+      <h1>Hi, I'm Brendon.</h1>
+      <h1>I am an aspiring full stack web developer.</h1>
+      <a href="#projects"
+        ><button class="goto-projects">Take a look at my projects!</button></a
+      >
+    </header>
+    <main class="projects" id="projects">
+      <header class="projects-header">
+        <h1 class="projects-header-h1"><span>Projects</span></h1>
+      </header>
+      <div class="projects-list">
+        <div class="project">
+          <div class="project-info">
+            <h2 class="project-title">Knight's Tour</h2>
+            <p class="project-para">
+              From wikipedia, "A knight's tour is a sequence of moves of a
+              knight on a chessboard such that the knight visits every square
+              exactly once."
+            </p>
+            <br />
+            <p>
+              This project was a way to show off my Data Structures and
+              Algorithms skills!
+            </p>
+            <br />
+            <p>
+              <i>Built with HTML, CSS and JavaScript.</i>
+            </p>
+            <a
+              href="https://brendonchow.github.io/knight-tour/index.html"
+              target="_blank"
+              rel="noreferrer noopener"
+              ><button class="live">Live Site</button></a
+            >
+            <a
+              href="https://github.com/brendonchow/knight-tour"
+              target="_blank"
+              rel="noreferrer noopener"
+              ><button class="github">Github</button></a
+            >
+          </div>
+          <img
+            class="project-image"
+            src="<%=require('./images/knight-tour.png')%>"
+          />
+        </div>
+      </div>
+    </main>
+    <footer class="footer"></footer>
+  </body>
 </html>

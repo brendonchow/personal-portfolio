@@ -1,7 +1,14 @@
+:root {
+  --background-color: hsl(210deg, 30%, 8%);
+  --header-text: #e10a78;
+}
+
 html {
   box-sizing: border-box;
   font-family: Roboto, system-ui, "Segoe UI", Helvetica, Arial, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  background-color: var(--background-color);
+  color: white;
 }
 
 *,
@@ -16,4 +23,122 @@ html {
 h1 {
   /* To override Normalize.css h1 margin */
   margin: 0;
+}
+
+.about {
+  height: 100vh;
+  display: grid;
+  justify-items: center;
+  align-content: center;
+  text-align: center;
+  row-gap: 10px;
+}
+
+button {
+  color: white;
+  border: 1px var(--header-text) solid;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  background-color: transparent;
+}
+
+button:hover {
+  background-color: var(--header-text);
+}
+
+/* @keyframes fill-button {
+  0% {
+    background: transparent;
+  }
+  50% {
+    background: linear-gradient(90deg, var(--header-text) 50%, transparent 100%);
+  }
+  100% {
+    background: var(--header-text);
+  }
+} */
+
+button:hover {
+  background: linear-gradient();
+}
+
+[href="#projects"] {
+  margin-top: 20px;
+}
+
+.goto-projects {
+  border-radius: 10px;
+  padding: 10px 25px;
+}
+
+.projects-header {
+  margin-top: 15px;
+  margin-bottom: 25px;
+}
+
+.projects-header-h1 {
+  text-align: center;
+  font-weight: normal;
+  line-height: 0px;
+  border-bottom: solid var(--header-text) 1px;
+}
+
+.projects-header-h1 span {
+  background-color: var(--background-color);
+  padding: 0px 10px;
+}
+
+.projects-list {
+  display: grid;
+  gap: 100px;
+  padding: 50px 10px 50px 10px;
+}
+
+.project {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.project-info {
+  flex: 0 0 300px;
+  text-align: left;
+}
+
+@media (max-width: 1069px) {
+  .project-info {
+    flex: 0 1 700px;
+  }
+}
+
+.project-image {
+  object-fit: cover;
+  min-width: 300px;
+  max-width: 700px;
+  width: 100%;
+}
+
+.project-title {
+  margin-bottom: 25px;
+}
+
+.project-info p {
+  font-size: 18px;
+}
+
+.live,
+.github {
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-top: 25px;
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+}
+
+.live {
+  margin-right: 25px;
 }
