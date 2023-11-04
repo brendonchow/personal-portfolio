@@ -46,18 +46,6 @@ button:hover {
   background-color: var(--header-text);
 }
 
-/* @keyframes fill-button {
-  0% {
-    background: transparent;
-  }
-  50% {
-    background: linear-gradient(90deg, var(--header-text) 50%, transparent 100%);
-  }
-  100% {
-    background: var(--header-text);
-  }
-} */
-
 button:hover {
   background: linear-gradient();
 }
@@ -141,4 +129,15 @@ a {
 
 .live {
   margin-right: 25px;
+}
+
+.footer {
+  display: grid;
+  justify-items: center;
+  background: linear-gradient(180deg, rgb(40, 40, 40), var(--background-color));
+  padding: 25px;
+}
+
+.github-logo {
+  width: 50px;
 }
