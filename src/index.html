@@ -25,8 +25,29 @@
       </header>
       <div class="projects-list">
         <div class="project">
+          <img
+            class="project-image"
+            src="<%=require('./images/knight-tour.png')%>"
+            alt="Knight's tour project"
+          />
           <div class="project-info">
-            <h2 class="project-title">Knight's Tour</h2>
+            <div class="project-header">
+              <h2 class="project-title">Knight's Tour</h2>
+              <div class="project-header-links">
+                <a
+                  href="https://brendonchow.github.io/knight-tour/index.html"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  ><button class="live">Live</button></a
+                >
+                <a
+                  href="https://github.com/brendonchow/knight-tour"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  ><button class="github">Github</button></a
+                >
+              </div>
+            </div>
             <p class="project-para">
               From wikipedia, "A knight's tour is a sequence of moves of a
               knight on a chessboard such that the knight visits every square
@@ -41,24 +62,7 @@
             <p>
               <i>Built with HTML, CSS and JavaScript.</i>
             </p>
-            <a
-              href="https://brendonchow.github.io/knight-tour/index.html"
-              target="_blank"
-              rel="noreferrer noopener"
-              ><button class="live">Live Site</button></a
-            >
-            <a
-              href="https://github.com/brendonchow/knight-tour"
-              target="_blank"
-              rel="noreferrer noopener"
-              ><button class="github">Github</button></a
-            >
           </div>
-          <img
-            class="project-image"
-            src="<%=require('./images/knight-tour.png')%>"
-            alt="Knight's tour project"
-          />
         </div>
       </div>
     </main>

@@ -78,37 +78,39 @@ button:hover {
 
 .projects-list {
   display: grid;
-  gap: 100px;
   padding: 50px 10px 50px 10px;
-}
-
-.project {
-  display: flex;
-  justify-content: center;
-  gap: 50px;
-  flex-wrap: wrap;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 500px));
+  justify-content: space-evenly;
 }
 
 .project-info {
-  flex: 0 0 300px;
   text-align: left;
 }
 
-@media (max-width: 1069px) {
-  .project-info {
-    flex: 0 1 700px;
-  }
+.project {
+  border: 2px solid rgb(50, 50, 50);
+  border-radius: 10px;
+  background-color: rgb(25, 25, 25);
+}
+
+.project-info {
+  padding: 20px;
 }
 
 .project-image {
   object-fit: cover;
-  min-width: 300px;
-  max-width: 700px;
   width: 100%;
+  border-radius: 10px 10px 0 0;
 }
 
-.project-title {
-  margin-bottom: 25px;
+.project-header {
+  margin-bottom: 15px;
+  display: flex;
+  column-gap: 50px;
+  row-gap: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .project-info p {
@@ -117,18 +119,14 @@ button:hover {
 
 .live,
 .github {
-  padding: 10px 20px;
+  padding: 5px 20px;
   border-radius: 5px;
-  margin-top: 25px;
   display: inline-block;
+  font-size: 18px;
 }
 
 a {
   text-decoration: none;
-}
-
-.live {
-  margin-right: 25px;
 }
 
 .footer {
@@ -140,4 +138,9 @@ a {
 
 .github-logo {
   width: 50px;
+}
+
+.project-header-links {
+  display: flex;
+  gap: 20px;
 }
