@@ -80,6 +80,7 @@ button:hover {
   padding: 50px 10px;
   grid-template-columns: repeat(auto-fill, minmax(300px, 500px));
   justify-content: space-evenly;
+  row-gap: 50px;
 }
 
 .project-info {
@@ -87,7 +88,7 @@ button:hover {
 }
 
 .project {
-  border: 2px solid rgb(50, 50, 50);
+  border: 2px solid var(--header-text);
   border-radius: 10px;
   background-color: rgb(25, 25, 25);
 }
